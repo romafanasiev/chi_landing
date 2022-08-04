@@ -1,1 +1,1 @@
-# chi_landing
+Homework %2 page landing
