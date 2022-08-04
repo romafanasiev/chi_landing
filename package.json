@@ -4,7 +4,8 @@
   "description": "Homework %2 page landing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:html": "linthtml"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "sass": "^1.54.2"
   },
   "devDependencies": {
+    "@linthtml/linthtml": "^0.8.6",
+    "@mate-academy/linthtml-config": "0.0.2",
     "@mate-academy/stylelint-config": "0.0.9",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0"
