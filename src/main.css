@@ -78,13 +78,16 @@
   padding: 76px 40px 100px;
   background-color: #fff;
   max-width: 509px; }
+  .article-tags {
+    margin-left: 36px;
+    padding: 0; }
   .article-editors {
     margin-left: 0;
     padding: 0; }
   .article-interior {
     margin-left: 55.5%;
     margin-top: 50px;
-    padding: 130px 40px 100px; }
+    padding: 76px 40px 100px; }
   .article__description {
     color: #1c1c1c80;
     font-size: 20px;
@@ -95,6 +98,8 @@
     font-size: 38px;
     font-weight: 700;
     line-height: 41px; }
+    .article__title-tags {
+      margin-top: 5px; }
   .article__author {
     margin-top: 16px;
     display: flex;
@@ -103,12 +108,14 @@
     font-size: 16px;
     line-height: 22px; }
     .article__author-editors {
-      margin-top: 0px; }
+      margin-top: 0; }
+    .article__author-tags {
+      margin-top: 5px; }
     .article__author_name {
       display: flex;
       align-items: center; }
       .article__author_name::after {
-        content: '';
+        content: "";
         display: inline-block;
         margin: 0 13px;
         height: 3px;
@@ -124,6 +131,10 @@
     line-height: 24px;
     word-spacing: 0.3em;
     max-width: 430px; }
+    .article__text-tags {
+      margin-top: 10px;
+      max-width: 540px;
+      word-spacing: normal; }
 
 .editors {
   margin-top: 52px;
@@ -151,10 +162,35 @@
 
 .interior {
   margin-top: 70px;
+  padding-top: 4px;
   height: 592px;
   background-image: url("./images/interiorBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.tags {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between; }
+  .tags__articles {
+    margin-left: 98px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; }
+    .tags__articles:first-child {
+      margin-top: 10px; }
+  .tags__card {
+    display: flex; }
+  .tags__list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 45px;
+    margin-right: 11.2%; }
+  .tags__item-bold {
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px; }
 
 body {
   padding: 0 20px 0 28px; }

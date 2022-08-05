@@ -1,0 +1,36 @@
+.tags {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+
+  &__articles {
+    margin-left: 98px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  &__card {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 45px;
+    margin-right: 11.2%;
+  }
+
+  &__item {
+    &-bold {
+      margin-bottom: 6px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+    }
+  }
+}

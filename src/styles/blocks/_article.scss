@@ -4,6 +4,11 @@
   background-color: $whiteColor;
   max-width: 509px;
 
+  &-tags {
+    margin-left: 36px;
+    padding: 0;
+  }
+
   &-editors {
     margin-left: 0;
     padding: 0;
@@ -12,7 +17,7 @@
   &-interior {
     margin-left: 55.5%;
     margin-top: 50px;
-    padding: 130px 40px 100px;
+    padding: 76px 40px 100px;
   }
 
   &__description {
@@ -27,6 +32,10 @@
     font-size: 38px;
     font-weight: 700;
     line-height: 41px;
+
+    &-tags {
+      margin-top: 5px;
+    }
   }
 
   &__author {
@@ -38,14 +47,19 @@
     line-height: 22px;
 
     &-editors {
-      margin-top: 0px;
+      margin-top: 0;
+    }
+
+    &-tags {
+      margin-top: 5px;
     }
 
     &_name {
       display: flex;
       align-items: center;
+
       &::after {
-        content: '';
+        content: "";
         display: inline-block;
         margin: 0 13px;
         height: 3px;
@@ -54,6 +68,7 @@
         border-radius: 50%;
       }
     }
+
     &_time {
       font-size: 14px;
       line-height: 19px;
@@ -66,5 +81,11 @@
     line-height: 24px;
     word-spacing: 0.3em;
     max-width: 430px;
+
+    &-tags {
+      margin-top: 10px;
+      max-width: 540px;
+      word-spacing: normal;
+    }
   }
 }
