@@ -1,0 +1,54 @@
+.article {
+  margin-left: 45px;
+  padding: 76px 40px 100px;
+  background-color: $whiteColor;
+  max-width: 509px;
+
+  &__description {
+    color: $greyColor;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+  }
+
+  &__title {
+    font-family: "Libre Baskerville", serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41px;
+  }
+
+  &__author {
+    margin-top: 16px;
+    display: flex;
+    align-items: baseline;
+    color: $greyColor;
+    font-size: 16px;
+    line-height: 22px;
+    &_name {
+      display: flex;
+      align-items: center;
+      &::after {
+        content: '';
+        display: inline-block;
+        margin: 0 13px;
+        height: 3px;
+        width: 3px;
+        background-color: $greyColor;
+        border-radius: 50%;
+      }
+    }
+    &_time {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  &__text {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 0.3em;
+    max-width: 430px;
+  }
+}
