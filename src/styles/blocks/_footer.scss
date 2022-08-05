@@ -1,0 +1,55 @@
+.footer {
+  margin-top: 240px;
+  height: 425px;
+  background-color: $borderColor;
+  color: $whiteColor;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 17px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 33px;
+    line-height: 41px;
+  }
+
+  &__text {
+    margin-bottom: 28px;
+    max-width: 332px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__link {
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &-twitter {
+      height: 25px;
+      width: 30px;
+      background-image: url("./images/icons/twitter.svg");
+    }
+
+    &-insta {
+      background-image: url("./images/icons/instagramm.svg");
+    }
+
+    &-linkedin {
+      background-image: url("./images/icons/linkedin.svg");
+    }
+  }
+}

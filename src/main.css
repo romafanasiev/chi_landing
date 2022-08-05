@@ -192,6 +192,47 @@
     font-weight: 700;
     line-height: 27px; }
 
+.footer {
+  margin-top: 240px;
+  height: 425px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer__title {
+    margin-bottom: 17px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 33px;
+    line-height: 41px; }
+  .footer__text {
+    margin-bottom: 28px;
+    max-width: 332px; }
+  .footer__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px; }
+  .footer__link {
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+    .footer__link-twitter {
+      height: 25px;
+      width: 30px;
+      background-image: url("./images/icons/twitter.svg"); }
+    .footer__link-insta {
+      background-image: url("./images/icons/instagramm.svg"); }
+    .footer__link-linkedin {
+      background-image: url("./images/icons/linkedin.svg"); }
+
 body {
   padding: 0 20px 0 28px; }
 
