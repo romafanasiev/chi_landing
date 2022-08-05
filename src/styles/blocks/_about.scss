@@ -1,0 +1,23 @@
+.about {
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 21px;
+  line-height: 30px;
+
+  &__img {
+    width: 250px;
+    height: 78px;
+  }
+
+  &__text {
+    margin-top: 26px;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    letter-spacing: 0.09em;
+    max-width: 370px;
+  }
+}

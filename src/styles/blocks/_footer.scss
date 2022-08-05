@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 240px;
+  margin-top: 244px;
   height: 425px;
   background-color: $borderColor;
   color: $whiteColor;
@@ -8,22 +8,25 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  &-about {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
 
   &__title {
-    margin-bottom: 17px;
+    margin-top: 130px;
     font-family: "Libre Baskerville", serif;
-    font-size: 33px;
-    line-height: 41px;
+    font-size: 42px;
   }
 
   &__text {
-    margin-bottom: 28px;
+    margin: 34px auto 0;
     max-width: 332px;
   }
 
   &__list {
+    margin: 38px auto 0;
     list-style: none;
     display: flex;
     align-items: center;
