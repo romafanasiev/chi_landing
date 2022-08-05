@@ -66,6 +66,56 @@
   .header__label {
     opacity: 0; }
 
+.hero {
+  margin-top: 40px;
+  height: 592px;
+  background-image: url("./images/heroBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.article {
+  margin-left: 45px;
+  padding: 76px 40px 100px;
+  background-color: #fff;
+  max-width: 509px; }
+  .article__description {
+    color: #1c1c1c80;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.05em; }
+  .article__title {
+    font-family: "Libre Baskerville", serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41px; }
+  .article__author {
+    margin-top: 16px;
+    display: flex;
+    align-items: baseline;
+    color: #1c1c1c80;
+    font-size: 16px;
+    line-height: 22px; }
+    .article__author_name {
+      display: flex;
+      align-items: center; }
+      .article__author_name::after {
+        content: '';
+        display: inline-block;
+        margin: 0 13px;
+        height: 3px;
+        width: 3px;
+        background-color: #1c1c1c80;
+        border-radius: 50%; }
+    .article__author_time {
+      font-size: 14px;
+      line-height: 19px; }
+  .article__text {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 0.3em;
+    max-width: 430px; }
+
 body {
   padding: 0 20px 0 28px; }
 
