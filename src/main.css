@@ -16,6 +16,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 31px; }
+  .header__logo:hover {
+    transform: scale(1.05); }
   .header__info {
     display: flex;
     align-items: center;
