@@ -9,6 +9,12 @@
     padding: 0;
   }
 
+  &-interior {
+    margin-left: 55.5%;
+    margin-top: 50px;
+    padding: 130px 40px 100px;
+  }
+
   &__description {
     color: $greyColor;
     font-size: 20px;

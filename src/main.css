@@ -81,6 +81,10 @@
   .article-editors {
     margin-left: 0;
     padding: 0; }
+  .article-interior {
+    margin-left: 55.5%;
+    margin-top: 50px;
+    padding: 130px 40px 100px; }
   .article__description {
     color: #1c1c1c80;
     font-size: 20px;
@@ -144,6 +148,13 @@
   .editors__card {
     display: flex;
     gap: 68px; }
+
+.interior {
+  margin-top: 70px;
+  height: 592px;
+  background-image: url("./images/interiorBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 body {
   padding: 0 20px 0 28px; }
