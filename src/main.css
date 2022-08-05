@@ -78,6 +78,9 @@
   padding: 76px 40px 100px;
   background-color: #fff;
   max-width: 509px; }
+  .article-editors {
+    margin-left: 0;
+    padding: 0; }
   .article__description {
     color: #1c1c1c80;
     font-size: 20px;
@@ -95,6 +98,8 @@
     color: #1c1c1c80;
     font-size: 16px;
     line-height: 22px; }
+    .article__author-editors {
+      margin-top: 0px; }
     .article__author_name {
       display: flex;
       align-items: center; }
@@ -115,6 +120,30 @@
     line-height: 24px;
     word-spacing: 0.3em;
     max-width: 430px; }
+
+.editors {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px; }
+  .editors__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.02em; }
+    .editors__title::after {
+      content: "";
+      margin: 8px auto 0;
+      display: block;
+      height: 5px;
+      width: 200px;
+      background-color: #1c1c1c; }
+  .editors__img {
+    height: 298px; }
+  .editors__card {
+    display: flex;
+    gap: 68px; }
 
 body {
   padding: 0 20px 0 28px; }
