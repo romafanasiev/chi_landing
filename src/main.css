@@ -1,15 +1,82 @@
+/* libre-baskerville-regular - latin */
 @font-face {
   font-family: "Libre Baskerville";
-  src: url("../fonts/libreBaskerville.woff2") format("woff2"); }
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/libreBaskerville.woff2") format("woff2"); }
 @font-face {
   font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
   src: url("../fonts/openSans.woff2") format("woff2"); }
 .page {
+  background-color: #fff; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px; }
+  .header__info {
+    display: flex;
+    align-items: center;
+    gap: 31px; }
+  .header__nav {
+    display: flex;
+    gap: 40px; }
+    .header__nav > a:last-child {
+      margin-left: -6px; }
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px; }
+  .header__link {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block; }
+    .header__link-bold {
+      font-weight: 700;
+      letter-spacing: 0.05em; }
+    .header__link-login {
+      margin-top: -8px;
+      display: flex;
+      align-items: center;
+      height: 46px;
+      color: #1c1c1c;
+      padding: 0 38px;
+      border: 2px solid #1c1c1c;
+      border-radius: 10px; }
+    .header__link:hover {
+      transform: scale(1.2); }
+  .header__input {
+    margin-top: -8px;
+    height: 46px;
+    width: 363px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url("./images/icons/Input.svg");
+    background-repeat: no-repeat;
+    background-position: right; }
+    .header__input:hover {
+      border-color: #1c1c1c; }
+  .header__label {
+    opacity: 0; }
+
+body {
+  padding: 0 20px 0 28px; }
+
+a {
+  transition-duration: 0.3s; }
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  transition-duration: 0.3s; }
 
 /*# sourceMappingURL=main.css.map */
