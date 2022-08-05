@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 40px;
+
+    & > a:last-child {
+      margin-left: -6px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__link {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $blackColor;
+    display: inline-block;
+
+    &-bold {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    &-login {
+      margin-top: -8px;
+      display: flex;
+      align-items: center;
+      height: 46px;
+      color: $borderColor;
+      padding: 0 38px;
+      border: 2px solid $borderColor;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__input {
+    margin-top: -8px;
+    height: 46px;
+    width: 363px;
+    border: 2px solid $whiteColor;
+    border-radius: 10px;
+    background-image: url("./images/icons/Input.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &:hover {
+      border-color: $borderColor;
+    }
+  }
+
+  &__label {
+    opacity: 0;
+  }
+}

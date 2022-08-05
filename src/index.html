@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <header>
-      <a href=""></a>
+    <header class="header">
+      <div class="header__info">
+        <a href="#">
+          <img src="./images/Logo.svg" alt="Company logo">
+        </a>
+        <nav class="header__nav">
+          <a href="#home" class="header__link header__link-bold">Home</a>
+          <a href="#home" class="header__link">Tags</a>
+          <a href="#home" class="header__link">About</a>
+        </nav>
+      </div>
+      <div class="header__actions">
+        <label for="search" class="header__label">Search</label>
+        <input type="text" class="header__input" id="search">
+        <a href="#login" class="header__link header__link-login">Login</a>
+      </div>
     </header>
     <main></main>
     <footer></footer>
