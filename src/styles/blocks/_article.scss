@@ -4,6 +4,11 @@
   background-color: $whiteColor;
   max-width: 509px;
 
+  &-editors {
+    margin-left: 0;
+    padding: 0;
+  }
+
   &__description {
     color: $greyColor;
     font-size: 20px;
@@ -25,6 +30,11 @@
     color: $greyColor;
     font-size: 16px;
     line-height: 22px;
+
+    &-editors {
+      margin-top: 0px;
+    }
+
     &_name {
       display: flex;
       align-items: center;
