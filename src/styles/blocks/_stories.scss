@@ -1,0 +1,175 @@
+.stories {
+  position: relative;
+  overflow: hidden;
+  margin: 98px 36px 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $borderColor;
+  color: #fff;
+
+  @include onTablet {
+    margin: 198px 36px 0;
+    padding: 176px 0 139px;
+  }
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 12.8%;
+    height: 69%;
+    width: 8px;
+    background-color: $whiteColor;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 15.4%;
+    height: 48%;
+    width: 8px;
+    background-color: $whiteColor;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &__images {
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+
+    & > img {
+      z-index: 3;
+      @include onTablet {
+        height: 350px;
+        width: 350px;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-first {
+      margin: 0 20px 0 20px;
+
+      @include onDesktop{
+        margin: 0 84px 0 100px;
+        flex-direction: row;
+      }
+
+      & > img {
+        margin-top: 20px;
+        z-index: 1;
+
+        @include onDesktop{
+          margin-top: -30px;
+        }
+      }
+    }
+
+    &-second {
+      margin-top: 50px;
+      position: relative;
+      top: 0;
+      flex-direction: column;
+      gap: 32px;
+      justify-content: center;
+      align-items: center;
+
+      @include onTablet {
+        margin-top: 0;
+        top: -100px;
+      }
+
+      & > img {
+        margin-left: 0;
+        z-index: 2;
+        width: 100%;
+
+        @include onTablet {
+          width: 557px;
+          height: 391px;
+          margin-left: -30px;
+        }
+      }
+    }
+
+    &-third {
+      margin: 50px 20px 0;
+
+      @include onTablet {
+        margin: 100px 0 0 238px;
+      }
+    }
+
+    &_text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+
+    &_title {
+      font-family: "Libre Baskerville", serif;
+      font-size: 20px;
+      line-height: 32px;
+
+      @include onTablet {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @include onDesktop {
+        font-size: 50px;
+        line-height: 52px;
+      }
+    }
+
+    &_description {
+      max-width: 436px;
+
+      &-second {
+        margin-left: 0;
+        max-width: 80%;
+
+        @include onTablet {
+          margin-left: -30px;
+          max-width: 524px;
+        }
+
+        & > p {
+          margin-top: 30px;
+        }
+      }
+
+      &-third {
+        max-width: 100%;
+
+        @include onTablet {
+          max-width: 580px;
+        }
+
+        & > p {
+          margin-top: 26px;
+        }
+      }
+    }
+  }
+}

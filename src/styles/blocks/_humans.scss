@@ -1,0 +1,43 @@
+.humans {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  text-align: center;
+
+  & > h2 {
+    margin-top: 84px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    line-height: 30px;
+
+    @include onTablet {
+      margin-top: 124px;
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    @include onDesktop {
+      margin-top: 224px;
+      font-size: 48px;
+      line-height: 52px;
+    }
+  }
+
+  & > p {
+    margin-top: 36px;
+    font-size: 8px;
+    line-height: 12px;
+
+    @include onTablet {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

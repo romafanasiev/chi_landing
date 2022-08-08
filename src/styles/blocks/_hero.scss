@@ -1,0 +1,11 @@
+.hero {
+  margin-top: 40px;
+  height: fit-content;
+  background-image: url("./images/heroBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include onTablet {
+    height: 592px;
+  }
+}

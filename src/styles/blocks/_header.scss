@@ -1,0 +1,158 @@
+.header {
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+  @include onTablet {
+    flex-direction: row;
+  }
+  
+  &__logo {
+    height: 40px;
+
+    @include onTablet {
+      flex-direction: row;
+      height: 40px;
+    }
+
+    @include onDesktop {
+      height: 57px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include onTablet {
+      gap: 20px;
+    }
+
+    @include onDesktop {
+      gap: 31px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 15px;
+
+    @include onTablet {
+      gap: 25px;
+    }
+
+    @include onDesktop {
+      gap: 40px;
+    }
+
+    & > a:last-child {
+      margin-left: -6px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    @include onTablet {
+      gap: 16px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $blackColor;
+    display: inline-block;
+
+    @include onTablet {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &-bold {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    &-login {
+      margin-top: -8px;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      color: $borderColor;
+      padding: 0 15px;
+      border: 2px solid $borderColor;
+      border-radius: 10px;
+
+      @include onTablet {
+        padding: 0 26px;
+        height: 36px;
+      }
+
+      @include onDesktop {
+        padding: 0 38px;
+        height: 46px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__input {
+    margin-top: -8px;
+    padding: 0 30px 0 10px;
+    height: 30px;
+    max-width: 180px;
+    border: 2px solid $whiteColor;
+    border-radius: 10px;
+    background-image: url("./images/icons/Input.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @include onTablet {
+      height: 36px;
+      max-width: 363px;
+    }
+
+    @include onDesktop {
+      height: 46px;
+    }
+
+    &:hover {
+      border-color: $borderColor;
+    }
+
+    &-tags-page {
+      display: none;
+
+      @include onTablet {
+        display: block;
+      }
+    }
+  }
+
+  &__label {
+    display: none;
+  }
+}

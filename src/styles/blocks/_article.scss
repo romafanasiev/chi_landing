@@ -1,0 +1,166 @@
+.article {
+  margin-left: 20px;
+  padding: 10px 10px 20px;
+  background-color: $whiteColor;
+  max-width: 90%;
+
+  @include onDesktop {
+    margin-left: 45px;
+    padding: 76px 40px 100px;
+    max-width: 509px;
+  }
+
+  &-tags {
+    margin-left: 0;
+    padding: 0;
+
+    @include onTablet {
+      margin-left: 36px;
+    }
+  }
+
+  &-editors {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  &-interior {
+    margin-left: 55.5%;
+    margin-top: 50px;
+    padding: 20px 10px 25px;
+
+    @include onTablet {
+      padding: 40px 20px 50px;
+    }
+
+    @include onDesktop {
+      padding: 76px 40px 100px;
+    }
+  }
+
+  &__description {
+    color: $greyColor;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+
+    @include onTablet {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+
+  &__title {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include onTablet {
+      font-size: 30px;
+      line-height: 32px;
+    }
+
+    @include onDesktop {
+      font-size: 38px;
+      line-height: 41px;
+    }
+
+    &-tags {
+      margin-top: 5px;
+    }
+  }
+
+  &__author {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $greyColor;
+    font-size: 8px;
+    line-height: 12px;
+
+    @include onTablet {
+      flex-direction: row;
+      align-items: baseline;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    @include onDesktop {
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-editors {
+      margin-top: 0;
+    }
+
+    &-tags {
+      margin-top: 5px;
+    }
+
+    &_name {
+      display: flex;
+      align-items: center;
+
+      @include onTablet {
+        &::after {
+          content: "";
+          display: inline-block;
+          margin: 0 13px;
+          height: 3px;
+          width: 3px;
+          background-color: $greyColor;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &_time {
+      font-size: 4px;
+      line-height: 8px;
+
+      @include onTablet {
+        font-size: 10px;
+        line-height: 16px;
+      }
+
+      @include onDesktop {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+    font-size: 10px;
+    line-height: 18px;
+    word-spacing: 0.3em;
+    max-width: 430px;
+
+    @include onTablet {
+      margin-top: 14px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-tags {
+      margin-top: 10px;
+      max-width: 540px;
+      word-spacing: normal;
+    }
+  }
+}

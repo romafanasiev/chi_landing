@@ -1,9 +1,14 @@
+/* libre-baskerville-regular - latin */
 @font-face {
   font-family: "Libre Baskerville";
-  src: url("../fonts/libreBaskerville.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/libreBaskerville.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/openSans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/openSans.woff2") format("woff2");
 }

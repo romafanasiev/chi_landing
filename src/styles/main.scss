@@ -1,10 +1,37 @@
 @import "fonts";
+@import "utils";
+@import "./blocks/page";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/article";
+@import "./blocks/editors";
+@import "./blocks/interior";
+@import "./blocks/tags";
+@import "./blocks/footer";
+@import "./blocks/about";
+@import "./blocks/stories";
+@import "./blocks/humans";
+@import "./blocks/tags_page";
+@import "./blocks/article_page";
 
-.page {
+body {
+  padding: 0 15px;
+
+  @include onTablet {
+    padding: 0 20px 0 28px;
+  }
+}
+
+a {
+  transition-duration: 0.3s;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  transition-duration: 0.3s;
 }
