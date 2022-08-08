@@ -6,27 +6,52 @@
   gap: 55px;
 
   &__title {
-    font-size: 42px;
+    font-size: 26px;
     font-weight: 700;
-    line-height: 57px;
+    line-height: 30px;
     letter-spacing: 0.02em;
+
+    @include onTablet {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    @include onDesktop {
+      font-size: 42px;
+      line-height: 57px;
+    }
 
     &::after {
       content: "";
       margin: 8px auto 0;
       display: block;
       height: 5px;
-      width: 200px;
+      width: 90%;
       background-color: $borderColor;
+
+      @include onTablet {
+        width: 200px;
+      }
     }
   }
 
   &__img {
-    height: 298px;
+    height: 200px;
+    @include onTablet {
+      height: 298px;
+    }
   }
 
   &__card {
     display: flex;
-    gap: 68px;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+
+    @include onTablet {
+      flex-direction: row;
+      gap: 68px;
+      text-align: start;
+    }
   }
 }
