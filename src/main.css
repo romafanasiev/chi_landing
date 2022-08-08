@@ -487,6 +487,127 @@
   gap: 60px;
 }
 
+.article-page {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+.article-page__img {
+  margin-top: 38px;
+  display: block;
+  object-position: center;
+  width: 100%;
+}
+.article-page__item {
+  margin: 54px 334px 0;
+}
+.article-page__title {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.article-page__text {
+  margin-top: 26px;
+  gap: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.article-page__text:nth-of-type(3) {
+  margin-top: 30px;
+}
+.article-page__subtext {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(28, 28, 28, 0.5019607843);
+}
+.article-page__subtext-name {
+  display: flex;
+  align-items: center;
+}
+.article-page__subtext-name::after {
+  content: "";
+  display: inline-block;
+  margin: 0 13px;
+  height: 3px;
+  width: 3px;
+  background-color: rgba(28, 28, 28, 0.5019607843);
+  border-radius: 50%;
+}
+.article-page__subtext-tags {
+  margin-top: 13px;
+}
+.article-page__author {
+  margin: 58px 334px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-page__author__img {
+  margin: 20px 38px 0 0;
+}
+.article-page__author__info {
+  margin-top: 18px;
+  max-width: 68%;
+}
+.article-page__author__about {
+  flex-basis: 100%;
+  color: rgba(28, 28, 28, 0.5019607843);
+  font-size: 20px;
+  line-height: 27px;
+}
+.article-page__author__name {
+  font-family: "Libre Baskerville", serif;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 41px;
+}
+.article-page__author__login {
+  margin-top: -2px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(28, 28, 28, 0.5019607843);
+}
+.article-page__author__text {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.article-page__navigation {
+  margin-top: 163px;
+  display: flex;
+  justify-content: space-between;
+}
+.article-page__navigation__selection {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.article-page__navigation__link {
+  display: block;
+  height: 150px;
+  width: 150px;
+  background-color: #1c1c1c;
+  border: none;
+  background-image: url("./images/icons/button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.article-page__navigation__link__text {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+.article-page__navigation__link__text-bold {
+  font-weight: 700;
+}
+.article-page__navigation__link-reverse {
+  transform: rotate(180deg);
+}
+
 body {
   padding: 0 20px 0 28px;
 }
