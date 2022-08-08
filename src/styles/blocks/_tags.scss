@@ -16,6 +16,10 @@
 
   &__card {
     display: flex;
+
+    &-page {
+      display: none;
+    }
   }
 
   &__list {
