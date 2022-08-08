@@ -1,0 +1,67 @@
+.tags-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__tabs {
+    margin: 60px auto 0;
+    width: 79%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__button {
+    padding: 20px 19px;
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    line-height: 20px;
+    height: 43px;
+    border: 1px solid $borderColor;
+    border-radius: 50px;
+    background-color: $whiteColor;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__input {
+    position: relative;
+    left: 10px;
+    margin: 190px 0 0;
+    padding: 0 60px 0 20px;
+    width: 54%;
+    height: 60px;
+    border: 1px solid $blackColor;
+    border-radius: 25px;
+    background-image: url("./images/icons/Input.svg");
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+
+    &:hover {
+      border-width: 2px;
+      border-color: $blackColor;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 22px;
+      color: $greyColor;
+    }
+  }
+
+  &__info {
+    margin: 120px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}

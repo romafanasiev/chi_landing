@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint '**/*.js'",
     "lint:css": "npx stylelint '**/*.scss'",
-    "lint:html": "linthtml --config ./node_modules/@mate-academy/linthtml-config/.linthtmlrc.json src/*.html"
+    "lint:html": "linthtml --config ./node_modules/@mate-academy/linthtml-config/.linthtmlrc.json src/*.html",
+    "sass": "sass --watch ./src/styles/main.scss:./src/main.css"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,10 @@
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.8.6",
+    "@mate-academy/eslint-config": "0.0.19",
     "@mate-academy/linthtml-config": "0.0.2",
     "@mate-academy/stylelint-config": "0.0.9",
+    "eslint": "^8.21.0",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0"
   }
