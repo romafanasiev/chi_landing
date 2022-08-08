@@ -1,7 +1,17 @@
 .article-page {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 8px;
+  line-height: 14px;
   color: $blackColor;
+
+  @include onTablet {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @include onDesktop {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   &__img {
     margin-top: 38px;
@@ -11,15 +21,29 @@
   }
 
   &__item {
-    margin: 54px 334px 0;
+    margin: 54px auto 0;
+
+    @include onDesktop {
+      margin: 54px 334px 0;
+    }
   }
 
   &__title {
     font-family: "Libre Baskerville", serif;
     text-align: center;
-    font-size: 42px;
+    font-size: 22px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 32px;
+
+    @include onTablet {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    @include onDesktop {
+      font-size: 42px;
+      line-height: 52px;
+    }
   }
 
   &__text {
@@ -62,12 +86,28 @@
   }
 
   &__author {
-    margin: 58px 334px 0;
+    margin: 58px auto 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
 
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      margin: 58px 334px 0;
+    }
+
     &__img {
-      margin: 20px 38px 0 0;
+      margin: 20px auto 0;
+      width: 80px;
+
+      @include onTablet {
+        width: 160px;
+        margin: 20px 38px 0 0;
+      }
     }
 
     &__info {
@@ -78,15 +118,35 @@
     &__about {
       flex-basis: 100%;
       color: $greyColor;
-      font-size: 20px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 26px;
+
+      @include onTablet {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      @include onDesktop {
+        font-size: 20px;
+        line-height: 27px;
+      }
     }
 
     &__name {
       font-family: "Libre Baskerville", serif;
-      font-size: 33px;
+      font-size: 20px;
       font-weight: 700;
-      line-height: 41px;
+      line-height: 26px;
+
+      @include onTablet {
+        font-size: 26px;
+        line-height: 30px;
+      }
+
+      @include onDesktop {
+        font-size: 33px;
+        line-height: 41px;
+      }
     }
 
     &__login {
@@ -97,32 +157,62 @@
     }
 
     &__text {
-      margin-top: 12px;
-      font-size: 16px;
+      margin-top: 8px;
+      font-size: 12px;
       line-height: 22px;
+
+      @include onTablet {
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      @include onDesktop {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
 
   &__navigation {
-    margin-top: 163px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
 
     &__selection {
       display: flex;
       align-items: center;
-      gap: 34px;
+      gap: 15px;
+
+      @include onTablet {
+        margin-top: 80px;
+        gap: 34px;
+      }
+
+      @include onDesktop {
+        margin-top: 163px;
+      }
     }
 
     &__link {
       display: block;
-      height: 150px;
-      width: 150px;
+      height: 50px;
+      width: 50px;
       background-color: $borderColor;
       border: none;
       background-image: url("./images/icons/button.svg");
       background-position: center;
       background-repeat: no-repeat;
+      background-size: contain;
+
+      @include onTablet {
+        height: 100px;
+        width: 100px;
+      }
+
+      @include onDesktop {
+        height: 150px;
+        width: 150px;
+      }
 
       &__text {
         font-family: "Libre Baskerville", serif;

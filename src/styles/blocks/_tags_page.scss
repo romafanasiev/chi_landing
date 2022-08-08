@@ -35,9 +35,9 @@
   &__input {
     position: relative;
     left: 10px;
-    margin: 190px 0 0;
+    margin: 40px 0 0;
     padding: 0 60px 0 20px;
-    width: 54%;
+    width: 100%;
     height: 60px;
     border: 1px solid $blackColor;
     border-radius: 25px;
@@ -45,15 +45,29 @@
     background-repeat: no-repeat;
     background-position: 96% 50%;
 
+    @include onTablet {
+      margin: 100px 0 0;
+      width: 54%;
+    }
+
+    @include onDesktop {
+      margin: 190px 0 0;
+    }
+
     &:hover {
       border-width: 2px;
       border-color: $blackColor;
     }
 
     &::placeholder {
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 12px;
+      line-height: 16px;
       color: $greyColor;
+
+      @include onTablet {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
 

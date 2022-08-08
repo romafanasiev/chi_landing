@@ -15,7 +15,11 @@
 @import "./blocks/article_page";
 
 body {
-  padding: 0 20px 0 28px;
+  padding: 0 15px;
+
+  @include onTablet {
+    padding: 0 20px 0 28px;
+  }
 }
 
 a {
