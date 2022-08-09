@@ -15,9 +15,9 @@
 
   &__img {
     margin-top: 38px;
+    width: 100%;
     display: block;
     object-position: center;
-    width: 100%;
   }
 
   &__item {
@@ -71,10 +71,10 @@
 
       &::after {
         content: "";
-        display: inline-block;
         margin: 0 13px;
         height: 3px;
         width: 3px;
+        display: inline-block;
         background-color: $greyColor;
         border-radius: 50%;
       }
@@ -105,8 +105,8 @@
       width: 80px;
 
       @include onTablet {
-        width: 160px;
         margin: 20px 38px 0 0;
+        width: 160px;
       }
     }
 
@@ -194,9 +194,9 @@
     }
 
     &__link {
-      display: block;
       height: 50px;
       width: 50px;
+      display: block;
       background-color: $borderColor;
       border: none;
       background-image: url("./images/icons/button.svg");

@@ -4,6 +4,7 @@
   background-image: url("./images/heroBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @include onTablet {
     height: 592px;

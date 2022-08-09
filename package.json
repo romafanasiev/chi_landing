@@ -9,7 +9,7 @@
     "lint:css": "npx stylelint '**/*.scss'",
     "lint:html": "linthtml --config ./node_modules/@mate-academy/linthtml-config/.linthtmlrc.json src/*.html",
     "sass": "sass --watch ./src/styles/main.scss:./src/main.css",
-    "gulp": "gulp"
+    "deploy": "gulp build && gh-pages -d build"
   },
   "repository": {
     "type": "git",

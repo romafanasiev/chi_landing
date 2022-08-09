@@ -1,10 +1,10 @@
 .article {
   margin-left: 20px;
   padding: 10px 10px 20px;
-  background-color: $whiteColor;
   max-width: 90%;
+  background-color: $whiteColor;
 
-  @include onDesktop {
+  @include onTablet {
     margin-left: 45px;
     padding: 76px 40px 100px;
     max-width: 509px;
@@ -56,10 +56,12 @@
   }
 
   &__title {
+    max-width: 430px;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: -0.02em;
 
     @include onTablet {
       font-size: 30px;
@@ -113,10 +115,10 @@
       @include onTablet {
         &::after {
           content: "";
-          display: inline-block;
           margin: 0 13px;
           height: 3px;
           width: 3px;
+          display: inline-block;
           background-color: $greyColor;
           border-radius: 50%;
         }
@@ -141,10 +143,10 @@
 
   &__text {
     margin-top: 0;
+    max-width: 430px;
     font-size: 10px;
     line-height: 18px;
     word-spacing: 0.3em;
-    max-width: 430px;
 
     @include onTablet {
       margin-top: 14px;
