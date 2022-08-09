@@ -1,12 +1,12 @@
 .footer {
   margin-top: 44px;
   height: 425px;
+  display: flex;
+  flex-direction: column;
   background-color: $borderColor;
   color: $whiteColor;
   font-size: 8px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
 
   @include onTablet {
     margin-top: 124px;
@@ -38,10 +38,10 @@
 
   &__list {
     margin: 38px auto 0;
-    list-style: none;
     display: flex;
     align-items: center;
     gap: 15px;
+    list-style: none;
   }
 
   &__link {
@@ -64,6 +64,10 @@
 
     &-linkedin {
       background-image: url("./images/icons/linkedin.svg");
+    }
+
+    &:hover {
+      transform: scale(1.2);
     }
   }
 }

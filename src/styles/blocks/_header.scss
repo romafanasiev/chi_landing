@@ -1,9 +1,9 @@
 .header {
   margin-top: 31px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   gap: 30px;
 
   @include onTablet {
@@ -15,7 +15,6 @@
 
     @include onTablet {
       flex-direction: row;
-      height: 40px;
     }
 
     @include onDesktop {
@@ -65,18 +64,18 @@
     gap: 8px;
 
     @include onTablet {
-      gap: 16px;
       justify-content: flex-start;
+      gap: 16px;
     }
   }
 
   &__link {
+    display: inline-block;
     font-family: "Libre Baskerville", serif;
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
     color: $blackColor;
-    display: inline-block;
 
     @include onTablet {
       font-size: 20px;
@@ -95,11 +94,11 @@
 
     &-login {
       margin-top: -8px;
+      height: 30px;
+      padding: 0 15px;
       display: flex;
       align-items: center;
-      height: 30px;
       color: $borderColor;
-      padding: 0 15px;
       border: 2px solid $borderColor;
       border-radius: 10px;
 

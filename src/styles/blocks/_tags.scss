@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   &__articles {
-    margin-left: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,11 +34,12 @@
   }
 
   &__list {
+    margin-right: 11.2%;
+    margin-left: 50px;
     display: none;
     list-style: none;
     font-size: 16px;
     line-height: 45px;
-    margin-right: 11.2%;
 
     @include onTablet {
       display: block;
@@ -56,5 +57,11 @@
 
   &__img {
     max-width: 100%;
+    min-height: 177px;
+    object-fit: cover;
+
+    @include onTablet {
+      max-width: 237px;
+    }
   }
 }

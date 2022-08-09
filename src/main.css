@@ -18,9 +18,9 @@
 .header {
   margin-top: 31px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   gap: 30px;
 }
 @media (min-width: 768px) {
@@ -34,7 +34,6 @@
 @media (min-width: 768px) {
   .header__logo {
     flex-direction: row;
-    height: 40px;
   }
 }
 @media (min-width: 1280px) {
@@ -85,17 +84,17 @@
 }
 @media (min-width: 768px) {
   .header__actions {
-    gap: 16px;
     justify-content: flex-start;
+    gap: 16px;
   }
 }
 .header__link {
+  display: inline-block;
   font-family: "Libre Baskerville", serif;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: #000;
-  display: inline-block;
 }
 @media (min-width: 768px) {
   .header__link {
@@ -115,11 +114,11 @@
 }
 .header__link-login {
   margin-top: -8px;
+  height: 30px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
-  height: 30px;
   color: #1c1c1c;
-  padding: 0 15px;
   border: 2px solid #1c1c1c;
   border-radius: 10px;
 }
@@ -181,6 +180,7 @@
   background-image: url("./images/heroBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .hero {
@@ -191,10 +191,10 @@
 .article {
   margin-left: 20px;
   padding: 10px 10px 20px;
-  background-color: #fff;
   max-width: 90%;
+  background-color: #fff;
 }
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .article {
     margin-left: 45px;
     padding: 76px 40px 100px;
@@ -248,10 +248,12 @@
   }
 }
 .article__title {
+  max-width: 430px;
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  letter-spacing: -0.02em;
 }
 @media (min-width: 768px) {
   .article__title {
@@ -305,10 +307,10 @@
 @media (min-width: 768px) {
   .article__author_name::after {
     content: "";
-    display: inline-block;
     margin: 0 13px;
     height: 3px;
     width: 3px;
+    display: inline-block;
     background-color: rgba(28, 28, 28, 0.5019607843);
     border-radius: 50%;
   }
@@ -331,10 +333,10 @@
 }
 .article__text {
   margin-top: 0;
+  max-width: 430px;
   font-size: 10px;
   line-height: 18px;
   word-spacing: 0.3em;
-  max-width: 430px;
 }
 @media (min-width: 768px) {
   .article__text {
@@ -356,7 +358,7 @@
 }
 
 .editors {
-  margin-top: 52px;
+  padding-top: 52px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,7 +368,6 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0.02em;
 }
 @media (min-width: 768px) {
   .editors__title {
@@ -383,9 +384,9 @@
 .editors__title::after {
   content: "";
   margin: 8px auto 0;
-  display: block;
   height: 5px;
   width: 90%;
+  display: block;
   background-color: #1c1c1c;
 }
 @media (min-width: 768px) {
@@ -404,14 +405,27 @@
 .editors__card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   text-align: center;
+  max-width: 900px;
 }
 @media (min-width: 768px) {
   .editors__card {
     flex-direction: row;
+    align-items: flex-start;
     gap: 68px;
     text-align: start;
+  }
+}
+.editors__card > img {
+  width: 290px;
+  height: 298px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .editors__card > img {
+    max-width: 371px;
   }
 }
 
@@ -435,7 +449,7 @@
   justify-content: space-between;
 }
 .tags__articles {
-  margin-left: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -463,11 +477,12 @@
   display: none;
 }
 .tags__list {
+  margin-right: 11.2%;
+  margin-left: 50px;
   display: none;
   list-style: none;
   font-size: 16px;
   line-height: 45px;
-  margin-right: 11.2%;
 }
 @media (min-width: 768px) {
   .tags__list {
@@ -482,17 +497,24 @@
 }
 .tags__img {
   max-width: 100%;
+  min-height: 177px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .tags__img {
+    max-width: 237px;
+  }
 }
 
 .footer {
   margin-top: 44px;
   height: 425px;
+  display: flex;
+  flex-direction: column;
   background-color: #1c1c1c;
   color: #fff;
   font-size: 8px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 @media (min-width: 768px) {
   .footer {
@@ -523,10 +545,10 @@
 }
 .footer__list {
   margin: 38px auto 0;
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 15px;
+  list-style: none;
 }
 .footer__link {
   display: inline-block;
@@ -546,6 +568,9 @@
 }
 .footer__link-linkedin {
   background-image: url("./images/icons/linkedin.svg");
+}
+.footer__link:hover {
+  transform: scale(1.2);
 }
 
 .about {
@@ -578,19 +603,19 @@
 }
 .about__text {
   margin-top: 26px;
+  max-width: 370px;
   font-family: "Libre Baskerville", serif;
   text-align: center;
   letter-spacing: 0.09em;
-  max-width: 370px;
 }
 
 .stories {
-  position: relative;
-  overflow: hidden;
   margin: 98px 36px 0;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
   background-color: #1c1c1c;
   color: #fff;
 }
@@ -602,12 +627,12 @@
 }
 .stories::before {
   content: "";
+  height: 69%;
+  width: 8px;
   display: none;
   position: absolute;
   bottom: 0;
   left: 12.8%;
-  height: 69%;
-  width: 8px;
   background-color: #fff;
 }
 @media (min-width: 768px) {
@@ -617,12 +642,12 @@
 }
 .stories::after {
   content: "";
+  height: 48%;
+  width: 8px;
   display: none;
   position: absolute;
   top: 0;
   right: 15.4%;
-  height: 48%;
-  width: 8px;
   background-color: #fff;
 }
 @media (min-width: 768px) {
@@ -634,6 +659,7 @@
   margin-top: 78px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 @media (min-width: 1280px) {
@@ -643,6 +669,9 @@
 }
 .stories__images > img {
   z-index: 3;
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .stories__images > img {
@@ -665,12 +694,21 @@
   }
 }
 .stories__card-first > img {
-  margin-top: 20px;
+  max-width: 569px;
+  height: auto;
+  position: relative;
+  top: 0;
   z-index: 1;
+  object-fit: fill;
+}
+@media (min-width: 768px) {
+  .stories__card-first > img {
+    height: 419px;
+  }
 }
 @media (min-width: 1280px) {
   .stories__card-first > img {
-    margin-top: -30px;
+    top: -30px;
   }
 }
 .stories__card-second {
@@ -678,9 +716,9 @@
   position: relative;
   top: 0;
   flex-direction: column;
-  gap: 32px;
   justify-content: center;
   align-items: center;
+  gap: 32px;
 }
 @media (min-width: 768px) {
   .stories__card-second {
@@ -690,14 +728,14 @@
 }
 .stories__card-second > img {
   margin-left: 0;
-  z-index: 2;
   width: 100%;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .stories__card-second > img {
+    margin-left: -30px;
     width: 557px;
     height: 391px;
-    margin-left: -30px;
   }
 }
 .stories__card-third {
@@ -709,9 +747,9 @@
   }
 }
 .stories__card_text {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 10px;
 }
 .stories__card_title {
   font-family: "Libre Baskerville", serif;
@@ -760,10 +798,10 @@
 
 .humans {
   margin: 0 auto;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 400px;
   text-align: center;
 }
 .humans > h2 {
@@ -821,27 +859,27 @@
 }
 .tags-page__button {
   padding: 20px 19px;
-  cursor: pointer;
-  font-family: "Libre Baskerville", serif;
-  font-size: 16px;
-  line-height: 20px;
   height: 43px;
+  display: flex;
+  align-items: center;
   border: 1px solid #1c1c1c;
   border-radius: 50px;
   background-color: #fff;
-  display: flex;
-  align-items: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
 }
 .tags-page__button:hover {
   transform: scale(1.05);
 }
 .tags-page__input {
-  position: relative;
-  left: 10px;
   margin: 40px 0 0;
   padding: 0 60px 0 20px;
   width: 100%;
   height: 60px;
+  position: relative;
+  left: 10px;
   border: 1px solid #000;
   border-radius: 25px;
   background-image: url("./images/icons/Input.svg");
@@ -901,9 +939,9 @@
 }
 .article-page__img {
   margin-top: 38px;
+  width: 100%;
   display: block;
   object-position: center;
-  width: 100%;
 }
 .article-page__item {
   margin: 54px auto 0;
@@ -955,10 +993,10 @@
 }
 .article-page__subtext-name::after {
   content: "";
-  display: inline-block;
   margin: 0 13px;
   height: 3px;
   width: 3px;
+  display: inline-block;
   background-color: rgba(28, 28, 28, 0.5019607843);
   border-radius: 50%;
 }
@@ -988,8 +1026,8 @@
 }
 @media (min-width: 768px) {
   .article-page__author__img {
-    width: 160px;
     margin: 20px 38px 0 0;
+    width: 160px;
   }
 }
 .article-page__author__info {
@@ -1077,9 +1115,9 @@
   }
 }
 .article-page__navigation__link {
-  display: block;
   height: 50px;
   width: 50px;
+  display: block;
   background-color: #1c1c1c;
   border: none;
   background-image: url("./images/icons/button.svg");
@@ -1109,6 +1147,11 @@
 }
 .article-page__navigation__link-reverse {
   transform: rotate(180deg);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 body {
